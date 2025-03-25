@@ -1,1 +1,43 @@
-Mohammad Sharbatdar
+#include<iostream>
+#include<vector>
+using namespace std;
+
+int main() {
+int a,b,i;
+vector<vector<int>> number_1;
+cout << "please enter a number:" << endl;
+
+for(i = 1; i > 0; i++)
+{
+cin >> a;
+if(a == 1)
+{
+vector<int> number_2;
+for(int j = 0; j < 3; j++)
+{
+cin >> b;
+number_2.push_back(b);
+}
+number_1.push_back(number_2);
+
+}
+else
+{
+for(vector<int> j: number_1)
+{
+for(int k: j)
+{
+cout << k << " ";
+
+}
+cout << endl;
+
+}
+exit(0);
+
+}
+
+}
+
+return 0;
+}
